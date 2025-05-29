@@ -1,0 +1,170 @@
+<html>
+  <head></head>
+  <body style="background-color: white">
+    <fieldset style="background-color: red">
+      <legend style="background-color: blue">Personal Data</legend>
+      <br />
+      <form>
+        <div>
+          <fieldset style="background-color: rgb(207, 207, 71)">
+            <legend style="background-color: lightblue; padding: 40px 0">
+              Your Name
+            </legend>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <label for="first-name">first name </label>
+                  </td>
+                  <td><strong> : </strong></td>
+                  <td>
+                    <input
+                      id="first-name"
+                      name="first-name"
+                      type="text"
+                      placeholder="ex.ahmed"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="second-name">second name </label>
+                  </td>
+                  <td><strong> : </strong></td>
+                  <td>
+                    <input
+                      id="second-name"
+                      name="second-name"
+                      type="text"
+                      placeholder="ex.bahnasy"
+                      required
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <table>
+          <tr>
+            <td>
+              <label for="tel"><strong> your phone </strong></label>
+            </td>
+            <td><strong> : </strong></td>
+
+            <td></td>
+            <td>
+              <input type="text" id="tel" name="tel" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"><strong> Email </strong></label>
+            </td>
+            <td><strong> : </strong></td>
+
+            <td></td>
+            <td>
+              <input type="email" id="email" name="email" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password"><strong> password </strong></label>
+            </td>
+            <td><strong> : </strong></td>
+
+            <td></td>
+            <td>
+              <input type="password" id="password" name="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="re-password"><strong> re-password </strong></label>
+            </td>
+            <td><strong>:</strong></td>
+            <td></td>
+            <td>
+              <input
+                type="password"
+                id="re-password"
+                name="re-password"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">male</label>
+        <br />
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">female</label>
+        <br />
+        <br />
+        <br />
+        <br />
+        <input
+          type="checkbox"
+          name="qualification"
+          id="student"
+          value="student"
+        />
+        <label for="student">student</label>
+        <br />
+        <input
+          type="checkbox"
+          name="qualification"
+          id="Graduated"
+          value="Graduated"
+        />
+        <label for="Graduated">Graduated</label>
+        <br />
+        <br />
+        <select name="Universities">
+          <optgroup label="Public Universities">
+            <option value="Alexanderia Univerisity">
+              Alexanderia Univerisity
+            </option>
+            <option value="Mansoura Univerisity">Mansoura University</option>
+            <option value="Cairo Univerisity">Cairo Univerisity</option>
+          </optgroup>
+          <optgroup label="Private Universities">
+            <option value="AUC">AUC</option>
+            <option value="BUE">BUE</option>
+            <option value="MIU">MIU</option>
+          </optgroup>
+        </select>
+        <br />
+        <br />
+        <!-- First option -->
+        <!-- <button>
+        <img
+          src="./images/Submit-button.png"
+          alt="Submit Button"
+          width="160px"
+          type="submit"
+        />
+      </button> -->
+        <!-- Second Option  -->
+        <input
+          type="image"
+          src="./images/Submit-button.png"
+          alt="Submit Button"
+          width="160px"
+        />
+      </form>
+    </fieldset>
+  </body>
+</html>

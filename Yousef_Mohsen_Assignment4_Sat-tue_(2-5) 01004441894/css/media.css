@@ -1,0 +1,50 @@
+/* Why Working With important and when remove it donot Work ... */
+/* X-Small */
+@media screen and (max-width: 576px) {
+  .x-sm-100 {
+    width: 100%;
+  }
+}
+
+/* Small */
+@media screen and (min-width: 576px) {
+  .sm-100 {
+    width: 100%;
+  }
+}
+/* Medium */
+@media screen and (min-width: 768px) {
+  .md-50 {
+    width: 50%;
+  }
+  .md-25 {
+    width: 25%;
+  }
+  .md-49 {
+    width: 49%;
+  }
+  .md-750 {
+    width: 750px;
+  }
+  .md-33 {
+    width: 33.33%;
+  }
+}
+/* Large */
+@media screen and (min-width: 992px) {
+  .lg-25 {
+    width: 25%;
+  }
+  .lg-33 {
+    width: 33.33%;
+  }
+  .lg-50 {
+    width: 50%;
+  }
+}
+/* X-Large */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}

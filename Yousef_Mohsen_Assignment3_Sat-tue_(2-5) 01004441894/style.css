@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+}
+/* nav bar section  */
+.nav {
+  width: 1516px;
+  margin-left: 80px;
+  padding: 5px 0;
+  position: fixed;
+}
+.nav .home {
+  border-top: 3px solid #ae9768;
+}
+.nav .link {
+  color: white;
+}
+.nav ul {
+  vertical-align: text-bottom;
+  margin-left: 660px;
+  display: inline-block;
+}
+.nav li {
+  display: inline-block;
+  margin-left: 9px;
+}
+.nav li a {
+  text-decoration: none;
+  color: #685f5f;
+  padding: 25px 20px;
+}
+.nav img {
+  width: 200px;
+}
+/* Header Section */
+.header {
+  background-image: url(images/drew-coffman-1872.jpg);
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+}
+.header .content {
+  color: white;
+  text-align: center;
+  margin-top: 400px;
+}
+.header p {
+  font-size: 20px;
+}
+.header h1 {
+  font-size: 50px;
+}
+.header button {
+  padding: 25px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+.header .learn {
+  background-color: rgb(142, 119, 84);
+  border: none;
+}
+.header .contact {
+  border: 1px solid white;
+  background-color: transparent;
+  margin-left: 10px;
+}
+.header a {
+  text-decoration: none;
+  color: white;
+}
+/* Who We Are Section */
+.who-we-are {
+  padding: 80px 0;
+  width: 1400px;
+  margin: 0 auto;
+}
+.who-we-are .image {
+  display: inline-block;
+  margin-left: 80px;
+}
+.who-we-are .image img {
+  width: 540px;
+}
+.who-we-are .content {
+  display: inline-block;
+  margin-left: 80px;
+  width: 49%;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.who-we-are .content p {
+  color: #686868;
+}
+.who-we-are .content .description {
+  margin-bottom: 50px;
+}
+.who-we-are .content .achievements div {
+  margin-bottom: 10px;
+}
+.who-we-are .content .achievements div img {
+  width: 40px;
+  border: 1px solid #ddd7d7;
+  border-radius: 50%;
+}
+.who-we-are .content .achievements div p {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+}
+/* Our Location  */
+.location-body {
+  background-color: #fff4f4;
+}
+.location {
+  padding: 80px 0;
+  width: 1400px;
+  margin: 0 auto;
+}
+.location .content {
+  display: inline-block;
+  width: 540px;
+  vertical-align: top;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+.location .image {
+  display: inline-block;
+  margin-left: 80px;
+}
+.location .image img {
+  width: 600px;
+}
+.location .content p {
+  color: #686868;
+  font-size: 14px;
+}
+/* Our Baking */
+.our-baking {
+  padding: 80px 0;
+  width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden; /* used it to apply padding-bottom to the section  */
+}
+.our-baking .text h2 {
+  font-weight: normal;
+}
+.our-baking .text p {
+  margin-bottom: 35px;
+}
+.our-baking .boxes {
+  margin-left: 80px;
+}
+.our-baking .box {
+  float: left;
+  width: 420px;
+}
+.our-baking img {
+  width: 380px;
+  margin-bottom: 25px;
+}
+.our-baking .content h3 {
+  margin-bottom: 25px;
+}
+.our-baking p {
+  color: #686868;
+}
+.clear {
+  clear: both;
+}
+/* Contact Information  */
+.contact-info-body {
+  background-color: #fff4f4;
+}
+.contact-info {
+  padding: 80px 0;
+  width: 1400px;
+  margin: 0 auto;
+}
+.contact-info .content {
+  width: 540px;
+  margin-left: 80px;
+  float: left;
+}
+.contact-info p {
+  color: #686868;
+}
+.contact-info .content p {
+  margin-bottom: 30px;
+}
+.contact-info .content .details .contact-text {
+  margin-bottom: 20px;
+}
+.contact-info .content .details div p {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+}
+.contact-info .content .details div img {
+  width: 40px;
+  border: 1px solid #ddd7d7;
+  border-radius: 50%;
+  background-color: #8e7754;
+}
+/* Footer */
+.footer-body {
+  background-color: #403d38;
+}
+.footer {
+  padding: 40px 0;
+  width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footer h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+.footer img {
+  width: 20px;
+}
+.footer-items {
+  float: left;
+  width: 25%;
+}
+.footer p {
+  color: #969696;
+  width: 250px;
+  display: inline-block;
+}
+.footer .items div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  width: 290px;
+}
+.footer-bottom {
+  background-color: #353330;
+  padding: 30px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  color: #969696;
+  font-size: 14px;
+}
+.footer-bottom .social img {
+  width: 40px;
+  background-color: #484540;
+  border-radius: 50%;
+  margin-left: 10px;
+}
