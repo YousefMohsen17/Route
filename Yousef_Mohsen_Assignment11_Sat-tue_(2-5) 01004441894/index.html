@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <h1>
+      Bookmarker
+
+      <div class="overlay"></div>
+    </h1>
+    <div class="container">
+      <form>
+        <h2>
+          <span><i class="fa-solid fa-bookmark"></i></span>Bookmark your
+          favorite sites<span><i class="fa-solid fa-bookmark"></i></span>
+        </h2>
+        <div>
+          <label for="bookmark-name">
+            <span><i class="fa-solid fa-book-bookmark"></i></span> Site
+            Name</label
+          >
+          <input id="bookmark-name" type="text" placeholder="Bookmark Name" />
+        </div>
+        <div>
+          <label for="site-url">
+            <span><i class="fa-solid fa-link"></i></span> Site Url</label
+          >
+          <input id="site-url" type="text" placeholder="Website URL" />
+        </div>
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>asddsa</td>
+            <td>
+              <button id="visit-btn">
+                <span><i class="fa-solid fa-eye"></i></span> Visit
+              </button>
+            </td>
+            <td>
+              <button id="del-btn">
+                <span><i class="fa-regular fa-trash-can"></i></span> delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
