@@ -70,7 +70,6 @@ function addWebsite() {
     bookmarkName.value.trim().length < 3 ||
     isValidURL(siteUrl.value.trim()) === false
   ) {
-    clear();
     return dialog.showModal();
   }
 
