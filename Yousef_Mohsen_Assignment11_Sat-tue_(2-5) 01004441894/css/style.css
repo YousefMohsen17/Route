@@ -3,9 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+::selection {
+  background-color: #fec260;
+  color: #352e28;
+}
+::backdrop {
+  background-color: rgb(28 25 23 / 0.6);
+}
 body {
   margin-top: 50px;
   background-color: #f7ecde;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 h1 {
   font-family: "Pacifico", cursive;
@@ -37,14 +48,14 @@ h1:hover .overlay {
   margin: 40px auto 0;
 }
 /* Form */
-form {
+.form {
   padding: 30px 0;
   border-bottom: 1px dotted;
   border-top: 1px dotted;
   position: relative;
   text-align: center;
 }
-form h2 {
+.form h2 {
   font-family: "Righteous", cursive;
   font-size: 25px;
   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
@@ -54,21 +65,21 @@ form h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-form h2 i {
+.form h2 i {
   margin-left: 10px;
   margin-right: 10px;
 }
-form label {
+.form label {
   font-size: 20px;
   font-weight: bold;
 }
-form div {
+.form div {
   text-align: left;
 }
-form label i {
+.form label i {
   margin-right: 10px;
 }
-form input {
+.form input {
   margin-top: 10px;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -85,12 +96,39 @@ form input {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-form input:focus {
+.form input.neutral:focus {
   border-color: #d99c39;
   box-shadow: 0 0 0 0.25rem #fec26055;
   outline: none;
 }
-form button {
+.form input.false:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+  outline: none;
+}
+.form input.true:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+  outline: none;
+}
+.form .box {
+  position: relative;
+}
+.box i {
+  position: absolute;
+  right: 10px;
+  bottom: 42px;
+  display: none;
+}
+.box #bookmark-warning-icon,
+#site-warning-icon {
+  color: #dc3545;
+}
+.box #bookmark-check-icon,
+#site-check-icon {
+  color: #198754;
+}
+.form button {
   cursor: pointer;
   padding: 10px 40px;
   color: white;
@@ -108,7 +146,7 @@ form button {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-form button:hover {
+.form button:hover {
   background-color: #bb4120;
 }
 /* Table */
@@ -129,7 +167,8 @@ table tbody td {
   padding: 15px;
   border-top: 1px solid #ddd;
 }
-table button {
+table button,
+table #visit-btn {
   cursor: pointer;
   padding: 10px 20px;
   color: white;
@@ -157,4 +196,83 @@ table #del-btn {
 }
 table #del-btn:hover {
   background-color: #d30820;
+}
+/* Dialog */
+dialog {
+  padding: 20px;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+dialog button {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+dialog .circles {
+  display: flex;
+  gap: 10px;
+}
+dialog .circles div {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+dialog .circles .red {
+  background-color: #f15f5d;
+}
+dialog .circles .yellow {
+  background-color: #febe2e;
+}
+dialog .circles .green {
+  background-color: #4db748;
+}
+dialog > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+dialog p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+dialog ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+dialog ul i {
+  color: #f15f5d;
+  margin-right: 7px;
+}
+@media (max-width: 576px) {
+  dialog {
+    width: 80%;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .form h2 {
+    font-size: 18px;
+  }
 }
