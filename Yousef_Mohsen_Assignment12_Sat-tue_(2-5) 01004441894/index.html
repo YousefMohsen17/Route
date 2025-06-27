@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="mynav d-none">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand text-white text-uppercase fs-4">Smart Login</a>
+          <form class="d-flex" role="search">
+            <button
+              class="btn btn-outline-warning text-white-50"
+              type="submit"
+              onclick="handleLogout()"
+            >
+              Logout
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div
+        class="welcome-box translate-middle top-50 start-50 position-absolute w-50 p-5"
+      >
+        <h1 class="text-info text-center welcome-message"></h1>
+      </div>
+    </div>
+
+    <div class="container position-relative vh-100">
+      <form class="login-box box my-5 p-5 text-center w-75 m-auto">
+        <h1 class="text-info">Smart Login System</h1>
+        <input
+          id="sign-in-email"
+          type="email"
+          placeholder="Enter your email"
+          class="form-control my-4 bg-transparent text-white"
+        />
+        <input
+          id="sign-in-password"
+          type="password"
+          class="form-control my-4 bg-transparent text-white"
+          placeholder="Enter your password"
+        />
+        <p class="text-danger fs-4 login-message"></p>
+        <button class="btn btn-outline-info w-100 mb-3 login-btn" type="submit">
+          Login
+        </button>
+
+        <p class="text-white">
+          Don't have an account?
+          <a
+            class="text-decoration-none text-white sign-up"
+            href="#"
+            onclick="handleSignInAndUpClick()"
+          >
+            Sign Up
+          </a>
+        </p>
+      </form>
+      <form class="signup-box box d-none my-5 p-5 text-center w-75 m-auto">
+        <h1 class="text-info">Smart Login System</h1>
+        <input
+          id="sign-up-name"
+          type="text"
+          placeholder="Enter your name"
+          class="form-control my-4 bg-transparent text-white"
+        />
+        <input
+          id="sign-up-email"
+          type="email"
+          class="form-control my-4 bg-transparent text-white"
+          placeholder="Enter your email"
+        />
+        <input
+          id="sign-up-password"
+          type="password"
+          class="form-control my-4 bg-transparent text-white"
+          placeholder="Enter your password"
+        />
+        <button
+          class="btn btn-outline-info w-100 mb-3 sign-up-btn"
+          type="submit"
+        >
+          Sign Up
+        </button>
+        <p class="text-success fs-3 signup-message"></p>
+        <p class="text-white">
+          You have an account?
+          <a
+            class="text-decoration-none text-white"
+            href="#"
+            onclick="handleSignInAndUpClick()"
+          >
+            Sign In
+          </a>
+        </p>
+      </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

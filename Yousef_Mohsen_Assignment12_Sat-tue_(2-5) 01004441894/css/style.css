@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+::placeholder {
+  color: white !important;
+}
+body {
+  background-color: #24353f;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.box,
+.welcome-box,
+.mynav {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+a {
+  cursor: pointer;
+}
+.login-box a:hover,
+.signup-box a:hover {
+  border-bottom: 1px white solid;
+}
+@media (max-width: 576px) {
+  .login-box,
+  .signup-box {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+  .welcome-box {
+    padding: 20px !important;
+  }
+  .welcome-box h1 {
+    font-size: 20px !important;
+  }
+}
