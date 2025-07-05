@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  BootStrap Library    -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--  Main Css    -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--  Font Awesome Library    -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-4">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-center align-items-center gap-4"
+          href="#"
+        >
+          <img class="w-25" src="imgs/logo@2x.png" alt="Weather Logo" />
+          <div class="d-flex flex-column">
+            <span class="text-white">Weather</span>
+            <span class="text-white-50 fs-6">tagline goes here</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon bg-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-info active px-4 py-1"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4 py-1" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4 py-1" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4 py-1" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4 py-1" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero overflow-auto">
+      <div class="container">
+        <div class="input-group mb-3 mt-5">
+          <input
+            type="text"
+            class="w-100 rounded-pill location-input py-3 px-3 text-white border-0"
+            placeholder="Find Your Location ..."
+            aria-label="Find Your Location ... "
+            aria-describedby="button-addon2"
+          />
+
+          <button
+            class="btn btn-outline-secondary bg-info text-white rounded-pill"
+            type="button"
+            id="button-addon2"
+          >
+            Find
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="forecast">
+      <div class="container">
+        <div class="row g-0">
+          <!-- <div class="col-lg-4">
+            <div class="box forecast-today p-3 d-flex flex-column gap-4">
+              <div
+                class="header d-flex justify-content-between align-items-center"
+              >
+                <span>Thursday</span>
+                <span>3 July</span>
+              </div>
+              <div class="content d-flex flex-column gap-4">
+                <h2>Cairo</h2>
+                <span class="degree text-white fw-bold">35.3C</span>
+                <img class="w-25" src="imgs/sunny.webp" alt="" />
+                <div class="stats d-flex align-items-center gap-3">
+                  <div>
+                    <img src="imgs/icon-umberella.png" alt="" />
+                    <span class="text-white">20%</span>
+                  </div>
+                  <div>
+                    <img src="imgs/icon-wind.png" alt="" />
+                    <span class="text-white">18km/h</span>
+                  </div>
+                  <div>
+                    <img src="imgs/icon-compass.png" alt="" />
+                    <span class="text-white">East</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box forecast-tomorrow p-3 d-flex flex-column gap-4">
+              <div class="header text-center">
+                <span>Thursday</span>
+              </div>
+              <div
+                class="content d-flex flex-column align-items-center gap-5 h-100 justify-content-center"
+              >
+                <img src="imgs/sunny.webp" alt="" />
+                <div class="d-flex flex-column align-items-center">
+                  <span class="degree text-white fw-bold fs-1">40C</span>
+                  <span>25.1</span>
+                </div>
+                <p class="text-info">Sunny</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="box forecast-after-tomorrow p-3 d-flex flex-column gap-4"
+            >
+              <div class="header text-center">
+                <span>Thursday</span>
+              </div>
+              <div
+                class="content d-flex flex-column align-items-center gap-5 h-100 justify-content-center"
+              >
+                <img src="imgs/sunny.webp" alt="" />
+                <div class="d-flex flex-column align-items-center">
+                  <span class="degree text-white fw-bold fs-1">40C</span>
+                  <span>25.1</span>
+                </div>
+                <p class="text-info">Sunny</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 gap-3"
+        >
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="w-100 rounded-pill email-input py-3 px-3 text-white border-0"
+              placeholder="Enter your email to subscribe ..."
+              aria-label="Enter your email to subscribe ... "
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary bg-info text-white rounded-pill"
+              type="button"
+              id="button-addon2"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="social d-flex gap-3">
+            <a href="#" class="text-decoration-none">
+              <i class="fa-brands fa-facebook-f text-info fs-5"></i>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <i class="fa-brands fa-twitter text-info fs-5"></i>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <i class="fa-brands fa-google-plus text-info fs-5"></i>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <i class="fa-brands fa-pinterest text-info fs-5"></i>
+            </a>
+          </div>
+        </div>
+        <p class="text-white">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
