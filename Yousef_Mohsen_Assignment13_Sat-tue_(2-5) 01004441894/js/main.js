@@ -3,7 +3,7 @@ const LocationInput = document.querySelector(".location-input");
 // Fetching Api
 async function getWeather(search) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=${APIKey}&q=${search}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=${APIKey}&q=${search}&days=3`
   );
   const data = await response.json();
   console.log(data);
